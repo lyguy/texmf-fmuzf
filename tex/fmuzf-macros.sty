@@ -1,0 +1,67 @@
+% Useful macros for writing mathematics
+% compiled in this version by Lyman Gillispie 2012
+
+\usepackage[margin=1in, head=1in]{geometry}
+\usepackage{amsmath, amssymb, amsthm}
+
+\usepackage{pdfsync}
+%\usepackage[T1]{fontenc}
+%\usepackage[sc]{mathpazo}
+%\linespread{1.05}         % Palatino needs more leading space between lines
+\parindent=0in
+\parskip=0.5\baselineskip
+\renewcommand{\labelenumi}{\arabic{enumi}.}
+
+%Some useful environments.
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{axiom}{Axiom}
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
+\newtheorem*{exercise}{Exercise}
+
+%Handy for writing Complex Analysis
+\newcommand{\re}{\text{Re}}
+\newcommand{\im}{\text{Im}}
+\newcommand{\zbar}{\overline{z}}
+
+% a few convenient shortcuts for text
+\newcommand{\ul}{\underline}
+
+% Some handy shortcuts for our favorite  sets
+\renewcommand{\emptyset}{\varnothing}
+\newcommand{\RR}{{\mathbb R}}
+\newcommand{\NN}{{\mathbb N}}
+\newcommand{\ZZ}{{\mathbb Z}}
+\newcommand{\QQ}{{\mathbb Q}}
+\newcommand{\CC}{{\mathbb C}}
+\newcommand{\FF}{{\mathbb F}}
+
+%Some useful shortcuts for formatting lists
+\newcommand{\bc}{\begin{center}}
+\newcommand{\ec}{\end{center}}
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+
+%Some useful shortcuts for writing math.
+\newcommand{\nor}[2]{\left\|#1\right\|_{#2}}
+\newcommand{\ip}[1]{\left\langle #1 \right\rangle}
+\newcommand{\nv}{^{-1}}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\ol}[1]{\overline{#1}}
+\newcommand{\oimp}[1]{\overset{#1}{\Longrightarrow}}
+\newcommand{\bv}[1]{\ensuremath{ \mathbf{\vec{#1}}} }
+\newcommand{\mc}[1]{\ensuremath{\mathcal{#1}}}
+\newcommand{\mpg}[1]{\marginpar{ #1}}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\diam}[1]{\text{diam}\left(#1\right)}
+\newcommand{\sgn}{\operatorname{sgn}}
+\newcommand{\abs}[1]{ \left| #1 \right|}
+\newcommand{\divides}{\, \Big | \,}
